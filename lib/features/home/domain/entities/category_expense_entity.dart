@@ -1,8 +1,8 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 
-class CategoryExpense extends Equatable {
-  const CategoryExpense({
+class CategoryExpenseEntity extends Equatable {
+  const CategoryExpenseEntity({
     required this.categoryName,
     required this.amount,
     required this.percentage,

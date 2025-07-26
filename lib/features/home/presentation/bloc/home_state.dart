@@ -15,7 +15,7 @@ class HomeState extends Equatable {
   final double income;
   final double expense;
   final double balance;
-  final List<CategoryExpense> categoryExpenses;
+  final List<CategoryExpenseEntity> categoryExpenses;
   final String message;
 
   HomeState copyWith({
@@ -23,7 +23,7 @@ class HomeState extends Equatable {
     double? income,
     double? expense,
     double? balance,
-    List<CategoryExpense>? categoryExpenses,
+    List<CategoryExpenseEntity>? categoryExpenses,
     String? message,
   }) {
     return HomeState(

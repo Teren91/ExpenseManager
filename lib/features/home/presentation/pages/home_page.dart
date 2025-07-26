@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:misgastos/app/di/injection_container.dart';
 import 'package:misgastos/features/home/presentation/bloc/home_bloc.dart';
+import 'package:misgastos/features/home/presentation/widgets/category_expense.dart';
 import 'package:misgastos/features/home/presentation/widgets/summary_card.dart';
 
 class HomePage extends StatelessWidget {
@@ -36,6 +37,8 @@ class HomePage extends StatelessWidget {
                       icon: Icons.arrow_upward,
                       amountColor: state.balance >= 0 ? Colors.green : Colors.red,
                     ),
+                    SizedBox(height: 8,),
+                    CategoryExpense(categoryExpense: state.categoryExpenses.first),
                   ],
                 )),
             );
